@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel de Aquino Silva | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte moderna do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <!-- Cabeçalho e Navegação -->
+    <header id="header">
+        <div class="container">
+            <h1 class="logo">Samuel Silva</h1>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><button id="theme-toggle" type="button" title="Alternar tema">🌓</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <div class="content-box">
+                    <p>Sou uma pessoa em constante desenvolvimento, com grande interesse na área de tecnologia e vontade de aprender cada vez mais. Tenho facilidade em entender novos conceitos, principalmente quando envolvem lógica, sistemas e resolução de problemas, e procuro sempre evoluir tanto no conhecimento técnico quanto na forma de me comunicar.</p>
+                    <p>Tenho um perfil curioso e autodidata, gosto de buscar soluções por conta própria, estudar novas ferramentas e entender como as coisas funcionam na prática. Ao mesmo tempo, valorizo o trabalho em equipe e a troca de conhecimento, pois acredito que isso acelera o aprendizado e melhora os resultados.</p>
+                    <p>Entre meus interesses, destaco a área de TI, programação e sistemas, além de ter bastante afinidade com jogos de estratégia. Gosto de explorar tecnologias novas e me manter atualizado com as tendências do mercado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Formação -->
+        <section id="formacao" class="section">
+            <div class="container">
+                <h2>Formação</h2>
+                <div class="content-box">
+                    <div class="education-item">
+                        <h3>Instituto Federal</h3>
+                        <p><strong>Ensino Médio Técnico em Redes de Computadores</strong></p>
+                        <p>Desenvolvimento de base sólida em lógica de programação, sistemas operacionais e infraestrutura de TI.</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Idiomas</h3>
+                        <p><strong>Inglês - Nível Avançado</strong></p>
+                        <p>Capacidade de leitura técnica, interpretação de interfaces e comunicação escrita clara e objetiva.</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Habilidades Técnicas</h3>
+                        <p>Lógica de Programação, Sistemas Operacionais, Pacote Office, Ambientes Digitais e Resolução de Problemas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Portfólio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h3>Projeto Integrador: Segurança da Informação</h3>
+                        <p>Análise e compreensão de comportamentos relacionados à segurança da informação, com foco em <strong>Red Team</strong> e engenharia social.</p>
+                        <p>Estudo prático sobre malware de roubo de dados e mitigação de riscos.</p>
+                    </div>
+                    <!-- Item extra para balancear o grid visualmente -->
+                    <div class="portfolio-item">
+                        <h3>Fundamentos Web</h3>
+                        <p>Desenvolvimento deste portfólio utilizando tecnologias core da web: HTML5, CSS3 e JavaScript puro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section">
+            <div class="container">
+                <h2>Contato</h2>
+                <form id="contact-form" class="content-box">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso ajudar?"></textarea>
+                    </div>
+                    <button type="submit" id="btn-enviar">Enviar Mensagem</button>
+                    <div id="form-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Samuel de Aquino Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
